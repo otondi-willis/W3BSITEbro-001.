@@ -1,21 +1,17 @@
-//COUNTER PROGRAM
+//Math = built in object that provides a 
+//collection of properties and methods
 
-const decreaseBtn = document.getElementById('decreaseBtn');
-const resetBtn = document.getElementById('resetBtn');
-const increaseBtn = document.getElementById('increaseBtn');
-const countLabel = document.getElementById('countLabel');
-let count=0;
+let x = 3.21;
+let y = 2;
+let z;
 
-increaseBtn.onclick = function() {
-    count++;
-    countLabel.textContent = count;
-}
+z = Math.floor(x);
+z = Math.round(x);
+z = Math.ceil(x);
+z = Math.trunc(x);
+z = Math.pow(x, 2);
+z = Math.sqrt(x);
+z = Math.log(x);
 
-decreaseBtn.onclick = function() {
-    count--;
-    countLabel.textContent = count;
-}
-resetBtn.onclick = function () {
-    count = 0;
-    countLabel.textContent = count;
-}
+
+console.log(z);
