@@ -1,26 +1,29 @@
-//IF STATEMENTS
+//.checked = property that determines the checked state of an 
+//          HTML checkbox or radio button element
 
-const myText = document.getElementById('myText');
+const myCheckBox = document.getElementById('myCheckBox');
+const visaBtn = document.getElementById('visaBtn');
+const mastercardBtn = document.getElementById('mastercardBtn');
+const payPalBtn = document.getElementById('payPalBtn');
 const mySubmit = document.getElementById('mySubmit');
-const resultElement = document.getElementById('resultElement');
-let age;
+const subResult = document.getElementById('subResult');
+const paymentResult = document.getElementById('paymentResult');
 
 
 mySubmit.onclick = function () {
-    age = parseInt(myText.value);
-    if(age >= 100){
-        
-        resultElement.textContent = "You are too old to enter this site";
-    }else if(age == 0){
-        
-        resultElement.textContent = "You cannot enter you are just born";
-    }else if(age >= 18){
-       
-        resultElement.textContent = "You are old enough to enter this site";
-    }else if(age < 0){
-        
-        resultElement.textContent = "You cannot enter you are just born";
+    if(myCheckBox.checked){
+        subResult.textContent = `You are subscribed`;
     } else {
-        resultElement.textContent = "You must be 18+ to enter this site";
+        subResult.textContent = `You are not subscribed`;
     }
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are paying with Visa`;
+    } else if (mastercardBtn.checked){
+        paymentResult.textContent = `You are paying with MasterCard`;
+    } else if (payPalBtn.checked){
+        paymentResult.textContent = `You are paying with paypal`;
+    } else {
+        paymentResult.textContent = `You must select payment type`;
+    }
+
 }
