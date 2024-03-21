@@ -1,0 +1,73 @@
+body{
+    background-image: url(backgroundImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid;
+
+}
+
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: #f0a6a65e;
+    width: 100%;
+
+}
+
+#container{
+   
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size:2rem;
+    font-weight: bold;
+
+}
+button{
+    
+    background-color: hsla(0, 85%,35%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsla(0, 85%,45%);
+}
+button:active{
+    background-color: hsla(0, 85%,55%);
+}
+input{
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid #850404;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#diceResult{
+    margin: 25px;
+
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
